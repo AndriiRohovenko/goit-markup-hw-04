@@ -17,6 +17,7 @@
   --slate: 67, 68, 85;
   --ocean: 64, 75, 191;
   --gradient-background-color: 46, 47, 66, 0.7;
+  --light-slate: 142, 143, 153, 1;
 }
 /* #endregion */
 
@@ -126,11 +127,6 @@ button {
 
 .icon {
   display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
 }
 
 /* #endregion */
@@ -279,6 +275,22 @@ button {
   align-items: center;
 }
 
+.strength-item-icon {
+  display: flex;
+  width: auto;
+  height: auto;
+  background-color: rgb(var(--cloud));
+  justify-content: center;
+  padding: 24px 100px;
+  border: 2px solid rgba(var(--light-slate));
+  border-radius: 4px;
+}
+
+.strength-item-icon .icon {
+  width: 64px;
+  height: 64px;
+}
+
 .strength-details {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -338,8 +350,34 @@ button {
   text-align: center;
 }
 
-.team-section .social-media-list {
+.social-media-list-item {
+}
+
+.social-media-list-link {
+}
+
+.social-media-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  /* border: 2px solid #5a67d8; */
+  border-radius: 50%;
+  background-color: #5a67d8;
+}
+
+.social-media-list .icon {
+  fill: white;
+  width: 16px;
+  height: 16px;
 }
 /* #endregion */
 
@@ -406,6 +444,14 @@ button {
 
 .page-footer .social-media-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.page-footer .social-icon .icon {
+  width: 24px;
+  height: 24px;
 }
 
 /* #endregion */
