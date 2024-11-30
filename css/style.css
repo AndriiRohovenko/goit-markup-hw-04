@@ -18,6 +18,7 @@
   --ocean: 64, 75, 191;
   --gradient-background-color: 46, 47, 66, 0.7;
   --light-slate: 142, 143, 153, 1;
+  --success-green: 49, 208, 170, 1;
 }
 /* #endregion */
 
@@ -452,6 +453,11 @@ button {
 .page-footer .social-icon .icon {
   width: 24px;
   height: 24px;
+}
+
+.page-footer .social-icon:hover,
+.page-footer .social-icon:active {
+  background-color: rgba(var(--success-green));
 }
 
 /* #endregion */
