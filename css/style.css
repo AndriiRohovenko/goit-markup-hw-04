@@ -285,6 +285,8 @@ button {
   padding: 24px 100px;
   border: 2px solid rgba(var(--light-slate));
   border-radius: 4px;
+  position: relative;
+  bottom: 8px;
 }
 
 .strength-item-icon .icon {
@@ -303,6 +305,7 @@ button {
 }
 .strength-item {
   flex-basis: calc((100% - 3 * 24px) / 4); /* Dynamically calculates width */
+  position: relative;
 }
 
 .strength-title {
