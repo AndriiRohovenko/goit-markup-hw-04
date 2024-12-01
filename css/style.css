@@ -443,10 +443,23 @@ button {
   width: 264px;
 }
 
-.page-footer .social-media-list {
+.page-footer .container {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+
+.social-media-container {
+  position: absolute;
+  left: 540px;
+}
+
+.social-media-container .footer-text {
+  margin-bottom: 16px;
+}
+
+.page-footer .social-media-list {
+  justify-content: flex-start;
   gap: 16px;
 }
 
