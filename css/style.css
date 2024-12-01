@@ -16,6 +16,9 @@
   --navy-blue: 46, 47, 66;
   --slate: 67, 68, 85;
   --ocean: 64, 75, 191;
+  --gradient-background-color: 46, 47, 66, 0.7;
+  --light-slate: 142, 143, 153, 1;
+  --success-green: 49, 208, 170, 1;
 }
 /* #endregion */
 
@@ -108,20 +111,7 @@ button {
   /* min-height: 100vh; */
   padding: 0 15px;
   margin: 0 auto;
-  /* display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  justify-content: center; */
 }
-
-/* .container-column {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
-} */
 
 .visually-hidden {
   position: absolute;
@@ -135,6 +125,11 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.icon {
+  display: inline-block;
+}
+
 /* #endregion */
 
 /* #region Header */
@@ -152,6 +147,9 @@ button {
   border-bottom: 1px solid #e7e9fc;
   margin-left: auto;
   margin-right: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .main-navigation {
@@ -228,6 +226,15 @@ button {
   height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(var(--gradient-background-color)),
+      rgba(var(--gradient-background-color))
+    ),
+    url(/images/hero-section/people-office_hero_section_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .hero-section .container {
@@ -272,6 +279,24 @@ button {
   align-items: center;
 }
 
+.strength-item-icon {
+  display: flex;
+  width: auto;
+  height: auto;
+  background-color: rgb(var(--cloud));
+  justify-content: center;
+  padding: 24px 100px;
+  border: 2px solid rgba(var(--light-slate));
+  border-radius: 4px;
+  position: relative;
+  bottom: 8px;
+}
+
+.strength-item-icon .icon {
+  width: 64px;
+  height: 64px;
+}
+
 .strength-details {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -283,7 +308,9 @@ button {
 }
 .strength-item {
   flex-basis: calc((100% - 3 * 24px) / 4); /* Dynamically calculates width */
+  position: relative;
 }
+
 .strength-title {
   margin-bottom: 8px;
 }
@@ -311,6 +338,9 @@ button {
 .team-member {
   background-color: rgb(var(--white));
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .team-photo {
 }
@@ -325,6 +355,35 @@ button {
 }
 .team-role {
   text-align: center;
+}
+
+.social-media-list-item {
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  top: 8px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  /* border: 2px solid #5a67d8; */
+  border-radius: 50%;
+  background-color: #5a67d8;
+}
+
+.social-media-list .icon {
+  fill: white;
+  width: 16px;
+  height: 16px;
 }
 /* #endregion */
 
@@ -360,6 +419,37 @@ button {
 }
 .portfolio-item-text {
 }
+
+.portfolio-item-image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--iris));
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.portfolio-item-image-box:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay p {
+  color: rgb(var(--white));
+  padding: 10px;
+  margin: 0;
+  padding: 40px 32px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 /* #endregion */
 
 /* #region Footer section */
@@ -387,6 +477,36 @@ button {
 .footer-text {
   color: rgb(var(--cloud));
   width: 264px;
+}
+
+.page-footer .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-container {
+  position: absolute;
+  left: 540px;
+}
+
+.social-media-container .footer-text {
+  margin-bottom: 16px;
+}
+
+.page-footer .social-media-list {
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.page-footer .social-icon .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.page-footer .social-icon:hover,
+.page-footer .social-icon:active {
+  background-color: rgba(var(--success-green));
 }
 
 /* #endregion */
