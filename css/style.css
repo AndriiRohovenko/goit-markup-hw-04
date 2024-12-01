@@ -419,6 +419,39 @@ button {
 }
 .portfolio-item-text {
 }
+
+.portfolio-item-image-box {
+  position: relative; /* Ensures the overlay is positioned correctly */
+  overflow: hidden; /* Prevents the overlay from spilling out */
+  width: 360px; /* Matches the image size */
+  height: 300px; /* Matches the image size */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--iris));
+  transform: translateY(100%); /* Initial position outside the view */
+  transition: transform 250ms ease-in-out;
+}
+
+.portfolio-item-image-box:hover .overlay {
+  transform: translateY(0); /* Bring the overlay into view on hover */
+}
+
+.overlay p {
+  color: rgb(var(--white));
+  padding: 10px;
+  margin: 0;
+  padding: 40px 32px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 /* #endregion */
 
 /* #region Footer section */
