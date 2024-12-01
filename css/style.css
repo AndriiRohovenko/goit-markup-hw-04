@@ -357,14 +357,13 @@ button {
 .social-media-list-item {
 }
 
-.social-media-list-link {
-}
-
 .social-media-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
+  position: relative;
+  top: 8px;
 }
 
 .social-icon {
