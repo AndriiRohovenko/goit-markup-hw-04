@@ -231,7 +231,7 @@ button {
       rgba(var(--gradient-background-color)),
       rgba(var(--gradient-background-color))
     ),
-    url(/images/hero-section/people-office_hero_section_img.jpg);
+    url(/./images/hero-section/people-office_hero_section_img.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
