@@ -231,7 +231,7 @@ button {
       rgba(var(--gradient-background-color)),
       rgba(var(--gradient-background-color))
     ),
-    url(/./images/hero-section/people-office_hero_section_img.jpg);
+    url(/images/hero-section/people-office_hero_section_img.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -288,8 +288,7 @@ button {
   padding: 24px 100px;
   border: 2px solid rgba(var(--light-slate));
   border-radius: 4px;
-  position: relative;
-  bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .strength-item-icon .icon {
@@ -308,7 +307,6 @@ button {
 }
 .strength-item {
   flex-basis: calc((100% - 3 * 24px) / 4); /* Dynamically calculates width */
-  position: relative;
 }
 
 .strength-title {
@@ -355,6 +353,7 @@ button {
 }
 .team-role {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .social-media-list-item {
@@ -365,8 +364,6 @@ button {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  position: relative;
-  top: 8px;
 }
 
 .social-icon {
@@ -480,14 +477,12 @@ button {
 }
 
 .page-footer .container {
-  position: relative;
   display: flex;
-  flex-direction: column;
 }
 
-.social-media-container {
-  position: absolute;
-  left: 540px;
+.footer-logo-text {
+  flex-direction: column;
+  margin-right: 120px;
 }
 
 .social-media-container .footer-text {
