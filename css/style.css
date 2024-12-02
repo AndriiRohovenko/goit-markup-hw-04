@@ -186,6 +186,7 @@ button {
   color: rgb(var(--navy-blue));
   padding-top: 24px;
   padding-bottom: 24px;
+  position: relative;
 }
 
 .navigation-link:hover {
@@ -194,8 +195,18 @@ button {
 .navigation-link:focus,
 .navigation-link:active {
   color: rgb(var(--ocean));
-  text-decoration: underline;
   text-decoration-color: rgb(var(--ocean));
+}
+
+.navigation-link.active:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: rgb(var(--ocean));
+  position: absolute;
+  bottom: 0;
 }
 
 .contact-info {
