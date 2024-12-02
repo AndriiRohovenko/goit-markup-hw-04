@@ -19,6 +19,9 @@
   --gradient-background-color: 46, 47, 66, 0.7;
   --light-slate: 142, 143, 153, 1;
   --success-green: 49, 208, 170, 1;
+
+  /* Transitions */
+  --easy-transition: 0.3s ease;
 }
 /* #endregion */
 
@@ -198,15 +201,23 @@ button {
   text-decoration-color: rgb(var(--ocean));
 }
 
-.navigation-link.active:hover::after {
+/* Default state for the pseudo-element */
+.navigation-link.active::after {
   content: '';
   display: block;
-  width: 100%;
+  width: 0;
   height: 4px;
   border-radius: 4px;
-  background-color: rgb(var(--ocean));
+  background-color: transparent;
   position: absolute;
   bottom: 0;
+  transition-property: width, background-color;
+  transition: var(--easy-transition);
+}
+
+.navigation-link.active:hover::after {
+  width: 100%;
+  background-color: rgb(var(--ocean));
 }
 
 .contact-info {
@@ -441,7 +452,8 @@ button {
   height: 100%;
   background-color: rgba(var(--iris));
   transform: translateY(100%);
-  transition: transform 250ms ease-in-out;
+  transition-property: transform;
+  transition: var(--easy-transition);
 }
 
 .portfolio-item-image-box:hover .overlay {
@@ -508,6 +520,8 @@ button {
 .page-footer .social-icon .icon {
   width: 24px;
   height: 24px;
+  transition-property: background-color;
+  transition: var(--easy-transition);
 }
 
 .page-footer .social-icon:hover,
