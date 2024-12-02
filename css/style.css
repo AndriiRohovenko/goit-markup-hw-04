@@ -248,8 +248,10 @@ button {
 .hero-section {
   background-color: rgb(var(--navy-blue));
   height: 600px;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin: auto;
   background-image: linear-gradient(
       to bottom,
       rgba(var(--gradient-background-color)),
@@ -306,18 +308,14 @@ button {
 .strength-item-icon {
   display: flex;
   width: auto;
-  height: auto;
+  height: 112px;
   background-color: rgb(var(--cloud));
   justify-content: center;
+  align-items: center;
   padding: 24px 100px;
-  border: 2px solid rgba(var(--light-slate));
+  border: 1px solid rgba(var(--light-slate));
   border-radius: 4px;
   margin-bottom: 8px;
-}
-
-.strength-item-icon .icon {
-  width: 64px;
-  height: 64px;
 }
 
 .strength-details {
