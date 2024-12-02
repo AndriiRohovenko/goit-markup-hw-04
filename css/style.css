@@ -259,7 +259,7 @@ button {
       rgba(var(--gradient-background-color)),
       rgba(var(--gradient-background-color))
     ),
-    url(/./images/hero-section/people-office_hero_section_img.jpg);
+    url(../images/hero-section/people-office_hero_section_img.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -293,6 +293,8 @@ button {
   min-width: 169px;
   height: 56px;
   border: none;
+  transition: var(--custom-transition);
+  transition-property: background-color;
 }
 .cta-button:hover,
 .cta-button:focus,
