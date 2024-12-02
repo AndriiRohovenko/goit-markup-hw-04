@@ -192,6 +192,8 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
+  transition-property: color;
+  transition: var(--custom-transition);
 }
 
 .navigation-link:hover {
