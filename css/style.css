@@ -529,6 +529,7 @@ button {
 
 .page-footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-text {
@@ -538,6 +539,8 @@ button {
 
 .social-media-container .footer-text {
   margin-bottom: 16px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .page-footer .social-media-list {
@@ -545,9 +548,15 @@ button {
   gap: 16px;
 }
 
+.social-media-link {
+  display: flex;
+  background-color: rgb(var(--iris));
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
 .page-footer .social-icon .icon {
-  width: 24px;
-  height: 24px;
   transition-property: background-color;
   transition: var(--easy-transition);
 }
