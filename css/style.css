@@ -461,6 +461,8 @@ button {
 .portfolio-item-image-box {
   position: relative;
   overflow: hidden;
+  transition: var(--custom-transition);
+  transition-property: transform;
 }
 
 .overlay {
