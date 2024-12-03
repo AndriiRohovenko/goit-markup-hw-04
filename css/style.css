@@ -192,8 +192,8 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
-  transition-property: color;
   transition: var(--custom-transition);
+  transition-property: color;
 }
 
 .navigation-link:hover {
@@ -215,8 +215,8 @@ button {
   /* background-color: transparent; */
   position: absolute;
   bottom: -1px;
-  transition-property: background-color;
   transition: var(--custom-transition);
+  transition-property: background-color;
 }
 
 .navigation-link.active:hover::after {
@@ -236,8 +236,8 @@ button {
 .contact-link {
   color: rgb(var(--slate));
   white-space: nowrap; /* Prevent line breaks within the contact link */
-  transition-property: color;
   transition: var(--custom-transition);
+  transition-property: color;
 }
 .contact-link:hover,
 .contact-link:focus,
@@ -398,8 +398,8 @@ button {
   width: 40px;
   height: 40px;
   background-color: rgb(var(--iris));
-  transition-property: background-color, fill;
   transition: var(--custom-transition);
+  transition-property: background-color, fill;
 }
 
 .social-media-list-link:hover,
@@ -469,8 +469,8 @@ button {
   height: 100%;
   background-color: rgba(var(--iris));
   transform: translateY(100%);
-  transition-property: transform;
   transition: var(--custom-transition);
+  transition-property: transform;
 }
 
 .overlay .hint-text {
