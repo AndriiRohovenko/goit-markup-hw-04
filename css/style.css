@@ -390,11 +390,6 @@ button {
   gap: 24px;
 }
 
-.social-media-list-item {
-  transition-property: background-color, fill;
-  transition: var(--custom-transition);
-}
-
 .social-media-list-link {
   display: flex;
   justify-content: center;
@@ -403,10 +398,13 @@ button {
   width: 40px;
   height: 40px;
   background-color: rgb(var(--iris));
+  transition-property: background-color, fill;
+  transition: var(--custom-transition);
 }
 
 .social-media-list-link:hover,
-.social-media-list-link:active {
+.social-media-list-link:active,
+.social-media-list-link:focus {
   background-color: rgba(var(--ocean));
 }
 
