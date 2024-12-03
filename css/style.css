@@ -188,7 +188,7 @@ button {
 
 .navigation-link {
   font-weight: var(--weight-medium);
-  color: rgb(var(--navy-blue));
+  color: rgb(var(--ocean));
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
@@ -212,7 +212,7 @@ button {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: transparent;
+  /* background-color: transparent; */
   position: absolute;
   bottom: -1px;
   transition-property: background-color;
@@ -407,7 +407,7 @@ button {
 
 .social-media-list-link:hover,
 .social-media-list-link:active {
-  background-color: rgba(var(--success-green));
+  background-color: rgba(var(--ocean));
 }
 
 .social-media-list .icon {
