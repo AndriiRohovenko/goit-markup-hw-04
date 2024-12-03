@@ -542,11 +542,12 @@ button {
 
 .page-footer .social-media-list {
   justify-content: flex-start;
-  gap: 24px;
+  gap: 16px;
 }
 
 .page-footer .social-media-list-link:hover,
-.page-footer .social-media-list-link:active {
+.page-footer .social-media-list-link:active,
+.page-footer .social-media-list-link:focus {
   background-color: rgba(var(--success-green));
 }
 
