@@ -383,9 +383,6 @@ button {
   margin-bottom: 8px;
 }
 
-.social-media-list-item {
-}
-
 .social-media-list {
   display: flex;
   justify-content: center;
@@ -393,20 +390,16 @@ button {
   gap: 24px;
 }
 
+.social-media-list-item {
+  transition-property: background-color;
+  transition: var(--custom-transition);
+}
+
 .social-media-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: rgb(var(--iris));
-  transition-property: background-color, fill;
-  transition: var(--custom-transition);
-}
-
-.social-media-list-link:hover,
-.social-media-list-link:active,
-.social-media-list-link:focus {
-  background-color: rgb(var(--ocean));
 }
 
 .social-icon {
@@ -417,11 +410,13 @@ button {
   height: 40px;
   border-radius: 50%;
   background-color: rgb(var(--iris));
+  transition-property: background-color, fill;
+  transition: var(--custom-transition);
 }
-/* .social-icon:hover,
+.social-icon:hover,
 .social-icon:active {
   background-color: rgba(var(--success-green));
-} */
+}
 
 .social-media-list .icon {
   fill: rgb(var(--cloud));
@@ -449,8 +444,7 @@ button {
 }
 .portfolio-item {
   width: calc((100% - 24px * 2) / 3);
-  transition: var(--custom-transition);
-  transition-property: box-shadow;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -556,24 +550,21 @@ button {
 
 .page-footer .social-media-list {
   justify-content: flex-start;
-  gap: 16px;
+  gap: 24px;
 }
 
-.page-footer .social-media-list li {
-  transition-property: background-color;
-  transition: var(--custom-transition);
-}
-
-.social-media-link {
+.social-media-list-link {
   display: flex;
   background-color: rgb(var(--iris));
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  width: 40px;
+  height: 40px;
 }
 
-.page-footer .social-icon:hover,
-.page-footer .social-icon:active {
+.page-footer .social-media-list-link:hover,
+.page-footer .social-media-list-link:active {
   background-color: rgba(var(--success-green));
 }
 
