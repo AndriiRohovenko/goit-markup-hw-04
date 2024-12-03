@@ -212,16 +212,16 @@ button {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  /* background-color: transparent; */
+  background-color: rgb(var(--ocean));
   position: absolute;
   bottom: -1px;
   transition: var(--custom-transition);
   transition-property: background-color;
 }
 
-.navigation-link.active:hover::after {
+/* .navigation-link.active:hover::after {
   background-color: rgb(var(--ocean));
-}
+} */
 
 .contact-info {
   font-style: normal;
@@ -435,12 +435,11 @@ button {
 .portfolio-item {
   width: calc((100% - 24px * 2) / 3);
   transition: var(--custom-transition);
-  transition-property: box-shadow, transform;
+  transition-property: box-shadow;
 }
 .portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transform: translateY(0%);
 }
 
 .portfolio-img {
