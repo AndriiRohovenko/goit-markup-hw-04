@@ -398,12 +398,14 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background-color: rgb(var(--iris));
   transition-property: background-color, fill;
   transition: var(--custom-transition);
 }
 
 .social-media-list-link:hover,
-.social-media-list-link:active {
+.social-media-list-link:active,
+.social-media-list-link:focus {
   background-color: rgb(var(--ocean));
 }
 
