@@ -399,7 +399,7 @@ button {
   height: 40px;
   background-color: rgb(var(--iris));
   transition: var(--custom-transition);
-  transition-property: background-color, fill;
+  transition-property: background-color;
 }
 
 .social-media-list-link:hover,
